@@ -34,7 +34,7 @@ This app allows users to paste or type long text, process it using a state-of-th
 
 ## 📦 Installation
 Clone this repository and install dependencies:
-```bash
+
 git clone https://huggingface.co/spaces/your-username/text-summarizer
 cd text-summarizer
 pip install -r requirements.txt
@@ -44,7 +44,6 @@ pip install -r requirements.txt
 ##  ▶️ Usage
 Run the app locally:
 
-```bash
 streamlit run app.py
 
 ---
@@ -71,5 +70,6 @@ Remove stopwords, clean special characters before summarization.
 
 
 ## 📜 License
+
 
 This project is licensed under the MIT License.
