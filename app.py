@@ -37,7 +37,7 @@ prompt = ChatPromptTemplate.from_messages([
 agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=[])
 executor = AgentExecutor(agent=agent, tools=[], verbose=True)
 
-st.set_page_config(page_title="📚 Book Summarizer", layout="wide")
+st.set_page_config(page_title="📚 Summarizer", layout="wide")
 st.title("📚 Book Summarizer Agent")
 
 if "chat_history" not in st.session_state:
@@ -89,3 +89,4 @@ if st.session_state.chat_history:
             st.markdown(f"**You:** {msg.content}")
         elif isinstance(msg, AIMessage):
             st.markdown(f"**AI:** {msg.content}")
+
